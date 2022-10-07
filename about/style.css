@@ -1,0 +1,70 @@
+#uls li::before {
+    content: "\2022";
+    color: white;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+  }
+  
+@media (max-height:800px){
+    .lolll{
+    position: static;
+    }
+    header {
+    padding-top:7px;
+    }
+    }
+    .lolll-distributed{
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    }
+    .lolll-distributed .lolll-left, .lolll-distributed .lolll-center, .lolll-distributed .lolll-right{
+    display: inline-block;
+    vertical-align: top;
+    }
+    /* lolll left */
+    .lolll-distributed .lolll-left{
+    width:45%;
+    padding-left: 4%;
+    padding-top: 2%;
+    }
+    /* lolll Center */
+    .lolll-distributed .lolll-center{
+    width: 1%;
+    }
+    /* lolll Right */
+    .lolll-distributed .lolll-right{
+    width: 45%;
+    }
+    @media (max-width: 880px) {
+    .lolll-distributed .lolll-left, .lolll-distributed .lolll-center, .lolll-distributed .lolll-right{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+    }
+    .lolll-distributed .lolll-center i{
+    margin-left: 0;
+    }
+}
+.cocos{
+    width: 450px;
+}
+@media (max-width: 680px) {
+    .cocos{
+        width: 330px;
+    }
+}
+
+.footer a{
+    text-decoration: none;
+    color: rgb(142, 21, 255);
+    font-size: 30px;
+    word-spacing: 25px;
+}
+.footer a:hover {
+    color: white;
+    transition: .8s;
+  }

@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+/* ------------------------------content------------------------------------------------ */
+@media (max-height:800px){
+  .lolll{
+      position: static;
+ }
+  header {
+      padding-top:40px;
+ }
+}
+.lolll-distributed{
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+}
+.lolll-distributed .lolll-left, .lolll-distributed .lolll-center, .lolll-distributed .lolll-right{
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* lolll left */
+.lolll-distributed .lolll-left{
+  width: 45%;
+  padding: 30px;
+}
+/* lolll Center */
+.lolll-distributed .lolll-center{
+  width: 15%;
+}
+/* lolll Right */
+.lolll-distributed .lolll-right{
+  width: 30%;
+}
+@media (max-width: 880px) {
+  .lolll-distributed .lolll-left, .lolll-distributed .lolll-center, .lolll-distributed .lolll-right{
+      display: block;
+      width: 100%;
+      margin-bottom: 40px;
+      text-align: center;
+ }
+  .lolll-distributed .lolll-center i{
+      margin-left: 0;
+ }
+}
+
+
+
+
+.lolll-distributed2{
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+}
+.lolll-distributed2 .lolll-left, .lolll-distributed2 .lolll-center, .lolll-distributed2 .lolll-right{
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* lolll left */
+.lolll-distributed2 .lolll-left{
+  width: 35%;
+  padding: 30px;
+}
+/* lolll Center */
+.lolll-distributed2 .lolll-center{
+  width: 30%;
+}
+/* lolll Right */
+.lolll-distributed2 .lolll-right{
+  width: 30%;
+}
+@media (max-width: 880px) {
+  .lolll-distributed2 .lolll-left, .lolll-distributed2 .lolll-center, .lolll-distributed2 .lolll-right{
+      display: block;
+      width: 100%;
+      margin-bottom: 40px;
+      text-align: center;
+ }
+  .lolll-distributed2 .lolll-center i{
+      margin-left: 0;
+ }
+}
+
+
+
+
+ .head_container{
+   padding-bottom:25% ; 
+ }
+ @media (max-width: 600px) {
+  .head_container{
+  padding-bottom: 35%;}
+  
+}
+img{
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+
+}
+#uls li::before {
+  content: "\2022";
+  color: white;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+
+
+.navMenu a {
+  color: #f6f4e6;
+  text-decoration: none;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  width: 140px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:hover {
+  color: rgb(142, 21, 255);
+}
+
+
+@media (max-width:700px){
+  .navMenu{
+    display:grid;
+  }
+  .navMenu i{
+    padding-bottom:30px ;
+  }
+}
+.navMenu i{
+  animation: bouncing 0.5s cubic-bezier(.1,.25,.1,1) 0s infinite alternate both;
+  position: relative;
+
+}
+@keyframes bouncing{
+  0%  { 
+ bottom: 0; 
+ box-shadow: 0 0 5px rgb(142, 21, 255);
+  }
+  
+  100%{ 
+ bottom: 15px; 
+ box-shadow: 0 30px 30px rgba(0,0,0,0.1);
+  }
+}

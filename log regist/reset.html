@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c8e372366f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha/css/bootstrap.min.css" integrity="sha384-r4NyP46KrJDleawBgD5tpBY7UznLA05oMliAEQ17C5uDqunUK2+k9luXQOfXJJrI" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="../style.css">
+    <title>log</title>
+</head>
+<body>
+  <div class="head_container">
+  <input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon"/>
+  <label for="menu-icon"></label>
+  <nav class="nav"> 		
+    <ul class="pt-5">
+      <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="../courses/courses.html"><i class="fas fa-book"></i> Courses</a></li>
+      <li><a href="../events/event.html"><i class="fa-solid fa-calendar-week"></i> Events</a></li>
+<li><a href="../about/about.html"><i class="fas fa-question-circle"></i> About</a></li>
+    </ul>
+  </nav>
+
+  <div class="patterns">
+    <svg width="100%" height="100%">
+      <defs>
+        <pattern id="polka-dots" x="0" y="0" width="100" height="100"
+    patternUnits="userSpaceOnUse">   
+      </defs>
+                
+      <rect x="0" y="0" width="100%" height="100%" fill="url(#polka-dots)"> </rect>
+       
+   <text x="50%" y="60%"  text-anchor="middle"  >
+     HWC
+   </text>
+   </svg>
+  </div>
+</div>
+<br><br><br><br><br><br><br>
+<center><div class="form-structor" style="height:350px">
+<div class="signup">
+<h2 class="form-title" id="signup">Reset password</h2>
+		<div class="form-holder">
+			<input type="text" class="input" placeholder="English teacher's name" />
+			<input type="password" class="input" placeholder="Password" />
+			<input type="password" class="input" placeholder="Confirm password" />
+		</div>
+		<button class="submit-btn">submit</button>
+</div>    
+</div></center>  
+<br><br>
+<script>
+console.clear();
+
+const loginBtn = document.getElementById('login');
+const signupBtn = document.getElementById('signup');
+
+loginBtn.addEventListener('click', (e) => {
+	let parent = e.target.parentNode.parentNode;
+	Array.from(e.target.parentNode.parentNode.classList).find((element) => {
+		if(element !== "slide-up") {
+			parent.classList.add('slide-up')
+		}else{
+			signupBtn.parentNode.classList.add('slide-up')
+			parent.classList.remove('slide-up')
+		}
+	});
+});
+
+signupBtn.addEventListener('click', (e) => {
+	let parent = e.target.parentNode;
+	Array.from(e.target.parentNode.classList).find((element) => {
+		if(element !== "slide-up") {
+			parent.classList.add('slide-up')
+		}else{
+			loginBtn.parentNode.parentNode.classList.add('slide-up')
+			parent.classList.remove('slide-up')
+		}
+	});
+});
+</script>
+
+</body>
+</html>

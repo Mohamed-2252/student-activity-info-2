@@ -1,0 +1,185 @@
+/* -----------------------------------------content------------------------------------------------/ */
+section{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+    padding: 100px 20px;
+    box-sizing: border-box;
+    
+  }
+  section ::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(65% at 100% -20%);
+  }
+  section ::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(65% at 100% -20%);
+  }
+  .meeting {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+  }
+  .meeting .card {
+    position: relative;
+    width: 320px;
+    height: 370px;
+    margin: 20px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(183, 181, 248);
+    border: solid white 1.5px;
+    box-shadow: 0 10px 25px rgb(142, 21, 255);
+    
+    backdrop-filter: blur(15px);
+    border-radius: 10%;
+  }
+  @media (max-width: 600px) {
+    .meeting .card {
+        width: 290px;
+    }
+  }
+  .meeting .card .test {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    transition: 0.3s ease-in-out;
+    
+  }
+  .meeting .card:hover .test {
+    transform: translateY(-100px);
+  }
+  .meeting .card .test #photo{
+    max-width: 100%;
+    margin: 0 0 20px;
+    transition: 0.3s ease-in-out;
+    border-radius: 10%;
+  }
+  .meeting .card .test #photo:hover {
+    transform: translate(-20px , -40px) rotate(-25deg) scale(1.4);
+  }
+  .meeting .card:hover .test h2 {
+    color: #fff;
+    font-weight: 600;
+  }
+  .meeting .card .content {
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .meeting .card:hover .content {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-50px);
+  }
+  .meeting .card .content .speaker, .meeting .card .content .time, .meeting .card .content .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+  }
+  .meeting .card .content .speaker h3, .meeting .card .content .time h3, .meeting .card .content .link h3 {
+    color: #fff;
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 10px;
+  }
+  span{
+    color: black;
+    font-size: 19px;
+    font-weight: bold;
+  }
+  @keyframes rotate {
+    0%{
+        filter: hue-rotate(0deg);
+   }
+    100%{
+        filter: hue-rotate(360deg);
+   }
+  }
+  @keyframes animate {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+   }
+    100% {
+        transform: translateY(-800px) rotate(360deg);
+        opacity: 0;
+   }
+  }
+  .explore{
+    position: absolute;
+    transform: translate(-50% , -50%);
+    background: rgb(142, 21, 255);
+    color: #ccc;
+    width: 105px;
+    height:35px;
+    border: 2px solid rgb(163, 76, 245);
+    font-size: 17px;
+    border-radius: 4px; 
+    transition: .6s;
+    font-weight: bold;
+    overflow: hidden;
+  }
+  .explore:focus{
+    outline: none;
+  }
+  
+  .explore:hover{
+    background-color: #EEE4AB;
+    border: 3px #ffbd4c;
+    color: black;
+    transition: .4s;
+    cursor: pointer;
+  }
+  .explore:hover:before{
+    transform: translateX(300px) skewX(-15deg);
+    opacity: .6;
+    transition: .4s;
+  }
+  .explore:hover:after{
+    transform: translateX(300px) skewX(-15deg);
+    opacity: 1;
+    transition: .4s;
+  }
+  #manage{
+    color: #29a5b1;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 2%;
+  }
+  #manage2{
+    color: black;
+    font-size: 20px;
+    font-weight: 200;
+    margin: 2%;
+  }
